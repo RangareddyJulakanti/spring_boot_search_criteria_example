@@ -1,6 +1,6 @@
 # spring_boot_search_criteria_example
 
-POST: http://localhost:8081/search/employee
+POST: http://localhost:8081/employee/search
 
 
 Body:
