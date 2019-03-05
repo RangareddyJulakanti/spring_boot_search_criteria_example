@@ -3,10 +3,11 @@ package com.rangareddy.demo.criteria;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.Valid;
 import java.time.ZonedDateTime;
-@Builder
+@Setter
 @Getter
 public class EmployeeCriteria {
     @JsonProperty

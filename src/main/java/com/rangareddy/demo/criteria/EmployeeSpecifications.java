@@ -34,7 +34,7 @@ public class EmployeeSpecifications  {
         return (root, query, cb) -> cb.ge(root.get("salary"), salary);
     }
     public static Specification<EEmployee> bySalaryBetween(final Double salary1,final Double salary2) {
-        return (root, query, cb) -> cb.between(root.get("salary").get("salary"), salary1,salary2);
+        return (root, query, cb) -> cb.between(root.get("salary"), salary1,salary2);
     }
 
     public static Specification<EEmployee> byDateOfBirth(final ZonedDateTime dateOfBirth){
